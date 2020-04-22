@@ -114,29 +114,3 @@ def display_correlation(corr, upper ):
 
 
 
-# #make the diagonal 0
-#     def pd_fill_diagonal(df_matrix, value=0): 
-#         mat = df_matrix.values
-#         n = mat.shape[0]
-#         mat[range(n), range(n)] = value
-#         return pd.DataFrame(mat)
-
-#     j = corr.where(corr>threshold)
-#     j = pd_fill_diagonal(j, 0) 
-#     k= np.where(j>threshold)
-#     m= list(zip(  k[0],k[1]))
-
-#     columns = corr.columns
-#     all = []
-#     for i in m:
-#         all.append([columns[i[0]],columns[i[1]],j.loc[i[0],i[1]]])
-
-#     all = pd.DataFrame(all)
-    
-#     if len(all)==0:
-#         all = pd.DataFrame([[],[],[]]).transpose()
-    
-#     all.columns = ['x1','x2','correlation'] 
-#     all.sort_values('correlation',ascending = False)
-    
-#     return all.sort_values('correlation',ascending = False)
